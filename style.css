@@ -1,0 +1,67 @@
+:root {
+  /* color variables */
+  --df-main:#9a89bf;
+}
+
+/* RESET */
+
+body {
+  margin: 0;
+  padding: .1em .75em;
+  background-color: rgb(236, 230, 236);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: .9em;
+}
+ul, ol {
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+/* START */
+
+
+
+
+/* NAV */
+
+.header-container {
+  display: flex;
+  justify-content:space-between;
+}
+
+.logo-header {
+  padding-top: 3px;
+  height: 2em;
+}
+
+.nav-container {
+  display: flex;
+  height: 2.5em;
+}
+
+.nav-li {
+  text-align: center;
+  align-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  color:var(--df-main);
+}
+
+.nli-1, .nli-2, .nli-3, .nli-4, .nli-5 {
+  border-right: 2px solid ivory;
+}
+
+a:hover {
+  color: ivory;
+  background-color:var(--df-main);
+  border-radius: 5px;
+  /* border: 1px solid var(--df-main); */
+  cursor: pointer;
+}
