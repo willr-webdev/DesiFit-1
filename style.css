@@ -40,7 +40,6 @@ a{
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   height: 100vh;
   align-items: flex-start;
 }
@@ -99,7 +98,7 @@ a:hover {
   display: flex;
   /* border: 2px solid red; */
   width: 100%;
-  height: 40vh;
+  height: 80vh;
 }
 
 .featured-1 {
