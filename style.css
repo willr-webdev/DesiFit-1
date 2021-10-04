@@ -90,7 +90,9 @@ a{
     padding-right: 15px;
   }
 
-/* Add media queries for responsiveness - when the screen is 700px wide or less, hide menu links and shows hamburger icon link */
+/* xSm MEDIA QUERY - screen width is 600px or less */
+
+/* hide menu links */
 @media screen and (max-width: 600px) {
   .nav-container {
     display: none;
@@ -98,11 +100,36 @@ a{
     display: block;
     text-align: left; */
   }
-
+/* shows hamburger icon link */
   .icon {
     display: flex;
   }
 }
+
+
+
+/* Sm MEDIA QUERY - screen width is between 601px and 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+}
+
+
+
+/* Med MEDIA QUERY - screen width is between 901px and 1200px */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+}
+
+
+
+/* Lrg MEDIA QUERY - screen width is between 1201px and 1800px */
+@media screen and (min-width: 1201px) and (max-width: 1800px) {
+}
+
+
+
+/* XL MEDIA QUERY - screen width is greater than 1800px */
+@media screen and (min-width: 1801px) {
+}
+
 
 
 /* FEATURED */
