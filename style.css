@@ -91,7 +91,7 @@ a{
   }
 
 /* Add media queries for responsiveness - when the screen is 700px wide or less, hide menu links and shows hamburger icon link */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .nav-container {
     display: none;
     /* float: none;
