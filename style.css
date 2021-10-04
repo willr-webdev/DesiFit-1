@@ -41,7 +41,8 @@ a{
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  align-items: flex-start;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
 }
 
 
@@ -53,37 +54,55 @@ a{
   display: flex;
   justify-content:space-between;
 }
+  .logo-header {
+    padding-top: 3px;
+    height: 2em;
+  }
 
-.logo-header {
-  padding-top: 3px;
-  height: 2em;
+  .nav-container {
+    display: flex;
+    height: 2.5em;
+  }
+    .nav-li {
+      text-align: center;
+      align-self: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      color:var(--df-main);
+    }
+
+    .nli-1, .nli-2, .nli-3, .nli-4, .nli-5 {
+      border-right: 2px solid ivory;
+    }
+      a:hover {
+        color: ivory;
+        background-color:var(--df-main);
+        border-radius: 5px;
+        /* border: 1px solid var(--df-main); */
+        cursor: pointer;
+      }
+
+  .icon {
+    display: none;
+    text-align: center;
+    align-self: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+/* Add media queries for responsiveness - when the screen is 700px wide or less, hide menu links and shows hamburger icon link */
+@media screen and (max-width: 700px) {
+  .nav-container {
+    display: none;
+    /* float: none;
+    display: block;
+    text-align: left; */
+  }
+
+  .icon {
+    display: flex;
+  }
 }
-
-.nav-container {
-  display: flex;
-  height: 2.5em;
-}
-
-.nav-li {
-  text-align: center;
-  align-self: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  color:var(--df-main);
-}
-
-.nli-1, .nli-2, .nli-3, .nli-4, .nli-5 {
-  border-right: 2px solid ivory;
-}
-
-a:hover {
-  color: ivory;
-  background-color:var(--df-main);
-  border-radius: 5px;
-  /* border: 1px solid var(--df-main); */
-  cursor: pointer;
-}
-
 
 
 /* FEATURED */
@@ -93,31 +112,28 @@ a:hover {
   display: flex;
   width: 100%;
 }
+  .featured-container {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+  }
+    .featured-1 {
+      flex: 1 1 50%;
+      padding: 15px 15px 0  ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: whitesmoke;
+    }
 
-.featured-container {
-  display: flex;
-  /* border: 2px solid red; */
-  width: 100%;
-  height: 80vh;
-}
-
-.featured-1 {
-  flex: 1 1 50%;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: whitesmoke;
-}
-
-.featured-2 {
-  flex: 1 1 50%;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color:lightgrey;
-}
+    .featured-2 {
+      flex: 1 1 50%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:lightgrey;
+    }
 
 
 
@@ -128,67 +144,55 @@ footer {
   flex: 100%;
   color:var(--df-text);
   display: flex;
-  padding: 10px 15px;
+  padding: 5px;
   background-color:var(--df-lightpurple);
 }
+  .quote-footer {
+    font-size: 1.2em;
+    font-style: italic;
+    flex: 75%;
+    padding: 5px;
+  }
 
-.quote-footer {
-  font-size: 1.2em;
-  font-style: italic;
-  flex: 75%;
-  padding: 5px;
-}
+  .cta-footer {
+    flex: 25%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .text-footer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .cta-span {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
 
-.cta-footer {
-  flex: 25%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
+    .a-footer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .subscribe-footer {
+      font-weight: bold;
+      }
 
-.text-footer {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cta-span {
-  font-size: 1.2em;
-  font-weight: bold;
-  /* border:7px solid yellow; */
-  /* border-radius: 5px; */
-  /* background-color: yellow; */
-}
+    .a-footer a {
+      color:var(--df-text-light);
+      background-color:yellow;
+      border-radius: 5px;
+      border: 5px solid yellow;
+      cursor: pointer;
+    }
 
-
-.a-footer {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.subscribe-footer {
- font-weight: bold;
-}
-
-.a-footer a {
-  color:var(--df-text-light);
-  background-color:yellow;
-  border-radius: 5px;
-  border: 5px solid yellow;
-  cursor: pointer;
-/* .a-footer a {
-  color: ivory;
-  background-color:var(--df-main);
-  border-radius: 5px;
-  border: 5px solid var(--df-main);
-  cursor: pointer; */
-}
-.a-footer a:hover {
-  color:var(--df-main);
-  background-color:ivory;
-  border-radius: 5px;
-  border: 5px solid ivory;
-  cursor: pointer;
-  transform: scale(1.25);
-}
+    .a-footer a:hover {
+      color:var(--df-main);
+      background-color:ivory;
+      border-radius: 5px;
+      border: 5px solid ivory;
+      cursor: pointer;
+      transform: scale(1.25);
+    }
