@@ -1,7 +1,10 @@
 /* Extra-Small Screens (smart phones) - screen width is 600px or less */
 
-/* hide menu links */
 @media screen and (max-width: 600px) {
+
+  .wrapper {
+    height:fit-content;
+  }
 
   /* hide nav menu */
   .nav-container {
@@ -13,9 +16,10 @@
     display: flex;
   }
 
-  /* .header-container {
-      height: 50px;
-  } */
+   .header-container {
+      height: fit-content;
+      margin-bottom: 5px;
+  } 
 
   /* change from 2 columns to 1 */
   .featured-container {
@@ -25,17 +29,24 @@
   /* reduce featured height to fit content */
   section.featured-1, section.featured-2 {
     /* height: fit-content; */
-    flex-basis: 1 1 100%;
+    flex: 1 1 100%;
     /* display: block; */
   }
 
   footer {
     flex-wrap: wrap;
+    padding-top: 10px;
   }
 
   blockquote.quote-footer {
     flex-basis: 100%;
+    background-color:rgba(255,255,255,.5);
+    border-radius: 5px;
+    font-size: .9em;
   }
 
+  .cta-footer {
+    padding-top: .9em;
+  }
 
 }
