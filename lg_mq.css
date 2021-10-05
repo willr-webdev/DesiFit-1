@@ -1,6 +1,5 @@
-/* Large Screens (desktops/laptops) - screen width is between 1201px and 1800px */
+/* Large Screens (desktops/laptops) - screen width is greater than 1800px */
 
-@media screen and (min-width: 601px) and (max-width: 1800px) {
 
 :root {
   /* color variables */
@@ -185,4 +184,3 @@ footer {
       cursor: pointer;
       transform: scale(1.25);
     }
-  }
