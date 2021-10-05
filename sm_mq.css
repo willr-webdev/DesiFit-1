@@ -1,4 +1,4 @@
-/* small MEDIA QUERY (small tablets/iPads) - screen width is between 601px and 900px */
+/* Small Screens (small tablets/iPads) - screen width is between 601px and 900px */
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
 

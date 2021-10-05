@@ -1,4 +1,4 @@
-/* extra-small MEDIA QUERY (smart phones) - screen width is 600px or less */
+/* Extra-Small Screens (smart phones) - screen width is 600px or less */
 
 /* hide menu links */
 @media screen and (max-width: 600px) {
