@@ -1,6 +1,6 @@
 /* Large Screens (desktops/laptops) - screen width is between 1201px and 1800px */
 
-@media screen and (min-width: 1201px) and (max-width: 1800px) {
+@media screen and (max-width: 1800px) {
 
 :root {
   /* color variables */
@@ -36,15 +36,14 @@ a{
 }
 
 
+/* ************************************** */
 
-/* START */
+/* PAGE FLEX WRAPPER */
 
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
 }
 
 
@@ -96,11 +95,13 @@ a{
 
 /* FEATURED */
 
+/* flex wrapper */
 .featured-wrapper {
   flex: 1 1 80%;
   display: flex;
   width: 100%;
 }
+  /* flex container */
   .featured-container {
     display: flex;
     width: 100%;
@@ -184,3 +185,4 @@ footer {
       cursor: pointer;
       transform: scale(1.25);
     }
+  }

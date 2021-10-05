@@ -13,15 +13,20 @@
     display: flex;
   }
 
+  .header-container {
+    /* height: 50px; */
+  }
+
   /* change from 2 columns to 1 */
   .featured-container {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   /* reduce featured height to fit content */
   section.featured-1, section.featured-2 {
-    height: fit-content;
+    /* height: fit-content; */
     flex-basis: 1 1 100%;
+    /* display: block; */
   }
 
   footer {
