@@ -13,9 +13,9 @@
     display: flex;
   }
 
-  .header-container {
-    /* height: 50px; */
-  }
+  /* .header-container {
+      height: 50px;
+  } */
 
   /* change from 2 columns to 1 */
   .featured-container {
