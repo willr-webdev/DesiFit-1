@@ -1,0 +1,36 @@
+/* extra-small MEDIA QUERY (smart phones) - screen width is 600px or less */
+
+/* hide menu links */
+@media screen and (max-width: 600px) {
+
+  /* hide nav menu */
+  .nav-container {
+    display: none;
+  }
+
+  /* shows hamburger icon link */
+  .icon {
+    display: flex;
+  }
+
+  /* change from 2 columns to 1 */
+  .featured-container {
+    flex-wrap: wrap;
+  }
+
+  /* reduce featured height to fit content */
+  section.featured-1, section.featured-2 {
+    height: fit-content;
+    flex-basis: 1 1 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  blockquote.quote-footer {
+    flex-basis: 100%;
+  }
+
+
+}
