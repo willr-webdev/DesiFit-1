@@ -41,6 +41,12 @@
     margin-bottom: 15px;
   }
 
+  .events {
+    margin-top: 15px;
+    padding-top: 30px;
+    background-color: #fff;
+  }
+
   .featured-2 img {
     width: 75%;
     border-left: 10px solid whitesmoke;

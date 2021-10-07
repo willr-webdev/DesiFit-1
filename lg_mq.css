@@ -1,5 +1,4 @@
-/* Large Screens (desktops/laptops) - screen width is greater than 1800px */
-
+/* Mobile First - screen width is greater than 600px */
 
 :root {
   /* color variables */
