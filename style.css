@@ -1,4 +1,4 @@
-/* Mobile First */
+/* ********** Mobile First ********** */
 
 :root {
   /* color variables */
@@ -8,8 +8,9 @@
   --df-text-light: lightslategray;
 }
 
-/* RESET */
-
+/*
+RESET
+*/
 body {
   margin: 0;
   padding: .1em .75em;
@@ -33,28 +34,23 @@ a{
   color: black;
 }
 
-
-/* ************************************** */
-
 /*
 PAGE FLEX WRAPPER
 */
-
 .wrapper {
   display: flex;
+  flex-direction: column;
   height: 90vh;
 }
-
 
 /*
 NAV
 */
-
 .header-container {
   flex: 1 1 100%;
   display: flex;
   justify-content:space-between;
-  height: fit-content;
+  height: auto;
   margin-bottom: 5px;
 }
   .logo-header {
@@ -85,7 +81,7 @@ NAV
         cursor: pointer;
       }
 
-  .icon {
+  .burger-icon {
     display: flex;
     text-align: center;
     align-self: center;
@@ -95,16 +91,16 @@ NAV
 
 
 
-/* FEATURED */
-
-/* flex wrapper */
-.featured-wrapper {
+/*
+FEATURED
+*/
+.featured-wrapper { /* flex wrapper */
   flex: 1 1 80%;
   display: flex;
   width: 100%;
 }
-  /* flex container */
-  .featured-container {
+  
+  .featured-container { /* flex container */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -115,7 +111,15 @@ NAV
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: rgb(241, 241, 241);
+      background-color: rgba(255, 255, 255, .5);
+    }
+
+    .featured-1 h3 {
+      padding-bottom: 15px;
+    }
+
+    .featured-1 h4 {
+      padding-bottom: 15px;
     }
 
     .featured-2 {
@@ -128,6 +132,23 @@ NAV
     }
       .featured-2 h3 {
         padding-bottom: 10px;
+      }
+
+      section > a {
+        color:ivory;
+        background-color:rgba(100,100,100,.5);
+        border-radius: 5px;
+        border: 5px solid rgba(100,100,100,.5);
+        cursor: pointer;
+      }
+
+      section > a:hover {
+        color:var(--df-main);
+        background-color:ivory;
+        border-radius: 5px;
+        border: 5px solid ivory;
+        cursor: pointer;
+        transform: scale(1.25);
       }
 
       h3.clients {
@@ -168,7 +189,6 @@ NAV
 /*
 FOOTER
 */
-
 footer {
   flex: 1 1 10%;
   color:var(--df-text);
