@@ -115,11 +115,15 @@ FEATURED
     }
 
     .featured-1 h3 {
+      font-size: 1.3em;
       padding-bottom: 15px;
     }
 
     .featured-1 h4 {
       padding-bottom: 15px;
+      font-size: 1.5em;
+      font-style: italic;
+      color:var(--df-text);
     }
 
     .featured-2 {
@@ -136,9 +140,9 @@ FEATURED
 
       section > a {
         color:ivory;
-        background-color:rgba(100,100,100,.5);
+        background-color:rgb(100,100,100);
         border-radius: 5px;
-        border: 5px solid rgba(100,100,100,.5);
+        border: 5px solid rgb(100,100,100);
         cursor: pointer;
       }
 
