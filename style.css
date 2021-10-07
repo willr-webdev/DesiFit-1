@@ -1,98 +1,4 @@
-/* Mobile First - screen width is greater than 600px */
-
-@media screen and (max-width: 600px) {
-
-  .wrapper {
-    height:fit-content;
-  }
-
-  /* hide nav menu */
-  .nav-container {
-    display: none;
-  }
-
-  /* shows hamburger icon link */
-  .icon {
-    display: flex;
-  }
-
-   .header-container {
-      height: fit-content;
-      margin-bottom: 5px;
-  } 
-
-  /* change from 2 columns to 1 */
-  .featured-container {
-    flex-direction: column;
-  }
-
-  /* reduce featured height to fit content */
-  section.featured-1, section.featured-2 {
-    /* height: fit-content; */
-    flex: 1 1 100%;
-    
-    /* display: block; */
-  }
-
-  h3.clients {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .events {
-    margin-top: 15px;
-    padding-top: 30px;
-    background-color: #fff;
-  }
-
-  .featured-2 img {
-    width: 75%;
-    border-left: 10px solid whitesmoke;
-    border-right: 10px solid whitesmoke;
-  }
-
-  .img-1 {
-    border-top: 10px solid whitesmoke;
-    border-bottom: 5px solid whitesmoke;
-  }
-
-  .img-2 {
-    border-top: 5px solid whitesmoke;
-    border-bottom: 5px solid whitesmoke;
-  }
-
-  .img-3 {
-    border-top: 5px solid whitesmoke;
-    border-bottom: 10px solid whitesmoke;
-  }
-
-  .featured-2 h3 {
-    padding-bottom: 10px;
-  }
-  
-  footer {
-    flex-wrap: wrap;
-    padding-top: 10px;
-  }
-
-  blockquote.quote-footer {
-    flex-basis: 100%;
-    background-color:rgba(255,255,255,.5);
-    border-radius: 5px;
-    font-size: .9em;
-  }
-
-  .cta-footer {
-    padding-top: .9em;
-  }
-
-}
-
-
-/* 
- */
+/* Mobile First */
 
 :root {
   /* color variables */
@@ -130,22 +36,26 @@ a{
 
 /* ************************************** */
 
-/* PAGE FLEX WRAPPER */
+/*
+PAGE FLEX WRAPPER
+*/
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
+  height: 90vh;
 }
 
 
-
-/* NAV */
+/*
+NAV
+*/
 
 .header-container {
   flex: 1 1 100%;
   display: flex;
   justify-content:space-between;
+  height: fit-content;
+  margin-bottom: 5px;
 }
   .logo-header {
     padding-top: 3px;
@@ -153,7 +63,7 @@ a{
   }
 
   .nav-container {
-    display: flex;
+    display: none;
     height: 2.5em;
   }
     .nav-li {
@@ -176,7 +86,7 @@ a{
       }
 
   .icon {
-    display: none;
+    display: flex;
     text-align: center;
     align-self: center;
     padding-left: 15px;
@@ -196,11 +106,11 @@ a{
   /* flex container */
   .featured-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    /* height: 80vh; */
   }
     .featured-1 {
-      flex: 1 1 50%;
+      flex: 1 1 100%;
       padding: 15px;
       display: flex;
       flex-direction: column;
@@ -209,29 +119,70 @@ a{
     }
 
     .featured-2 {
-      flex: 1 1 50%;
+      flex: 1 1 100%;
       padding: 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: lightgray;
     }
+      .featured-2 h3 {
+        padding-bottom: 10px;
+      }
+
+      h3.clients {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-top: 15px;
+        margin-bottom: 15px;
+      }
+    
+      .featured-2 img {
+        width: 75%;
+        border-left: 10px solid whitesmoke;
+        border-right: 10px solid whitesmoke;
+      }
+    
+      .img-1 {
+        border-top: 10px solid whitesmoke;
+        border-bottom: 5px solid whitesmoke;
+      }
+    
+      .img-2 {
+        border-top: 5px solid whitesmoke;
+        border-bottom: 5px solid whitesmoke;
+      }
+    
+      .img-3 {
+        border-top: 5px solid whitesmoke;
+        border-bottom: 10px solid whitesmoke;
+      }
+
+      .events {
+        margin-top: 15px;
+        padding-top: 30px;
+        background-color: #fff;
+      }
 
 
-
-/* FOOTER */
+/*
+FOOTER
+*/
 
 footer {
   flex: 1 1 10%;
   color:var(--df-text);
   display: flex;
-  padding: 5px;
+  flex-wrap: wrap;
+  padding: 10px 5px 5px 5px;
   background-color:var(--df-lightpurple);
 }
-  .quote-footer {
-    font-size: 1.2em;
+  blockquote.quote-footer {
+    background-color:rgba(255,255,255,.5);
+    border-radius: 5px;
+    font-size: .9em;
     font-style: italic;
-    flex: 1 1 75%;
+    flex: 1 1 100%;
     padding: 5px;
   }
 
@@ -239,6 +190,7 @@ footer {
     flex: 1 1 25%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: .9em;
   }
     .text-footer {
       flex: 1;
