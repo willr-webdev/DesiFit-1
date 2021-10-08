@@ -51,10 +51,10 @@ NAV
   display: flex;
   justify-content:space-between;
   height: auto;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
   .logo-header {
-    padding-top: 3px;
     height: 2em;
   }
 
@@ -86,7 +86,11 @@ NAV
     text-align: center;
     align-self: center;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 5px;
+  }
+
+  i.fa-bars {
+    font-size: 1.15em;
   }
 
 
