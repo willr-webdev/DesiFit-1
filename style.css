@@ -107,7 +107,7 @@ FEATURED
   }
     .featured-1 {
       flex: 1 1 100%;
-      padding: 15px;
+      padding: 25px 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -125,6 +125,7 @@ FEATURED
       font-style: italic;
       color:var(--df-text);
     }
+
 
     .blog {
       background-color: rgba(255, 255, 255, .5);
