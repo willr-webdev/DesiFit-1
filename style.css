@@ -128,10 +128,24 @@ FEATURED
 
     .blog {
       background-color: rgba(255, 255, 255, .5);
+      background-image: url(assets/DesiFitLogo2019-01.png);
+      background-size:15%;
+      background-blend-mode:overlay;
       flex: 1 1 auto;
-      font-size: 1.5em;
+      font-size: 2.75em;
+      font-style: italic;
       text-align: center;
-      
+      min-height: 5em;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .date-line {
+      font-size: .5em;
+    font-style: normal;
+    padding-top: 5px;
     }
 
     .featured-2 {
