@@ -51,7 +51,7 @@ NAV
   display: flex;
   justify-content:space-between;
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
   .logo-header {
     padding-top: 3px;
