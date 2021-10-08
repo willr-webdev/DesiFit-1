@@ -210,10 +210,16 @@ FEATURED
       }
 
       .events {
+        display: flex;
         width: 100%;
-        margin-top: 15px;
-        padding-top: 30px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         background-color: #fff;
+      }
+
+      .events img {
+        flex: 1 1 100%;
+        border:0;
       }
 
 
