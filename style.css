@@ -108,19 +108,21 @@ FEATURED
   i.fa-times {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.15em;
-    color:var(--df-main);
-    padding: 10px 10px 0 10px;
+    font-size: .75em;
+    color:whitesmoke;
+    background-color: var(--df-main);
+    padding: 5px 15px 5px 0px;
   }
 
   .open-nav {
-    /* display: none; */
+    display: none;
     flex: 1 1 50%;
+    flex-flow: column wrap;
     align-self: flex-end;
     width: fit-content;
     height: fit-content;
-    background-color: #fff;
-    border-radius: 15px;
+    background-color: whitesmoke;
+    border-radius: 3px;
     margin-top: -45px;
     margin-bottom: 25px;
   }
