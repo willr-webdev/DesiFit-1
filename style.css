@@ -105,9 +105,16 @@ FEATURED
   flex-direction: column;
   width: 100%;
 }
-  
+  i.fa-times {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.15em;
+    color:var(--df-main);
+    padding: 10px 10px 0 10px;
+  }
+
   .open-nav {
-    display: none;
+    /* display: none; */
     flex: 1 1 50%;
     align-self: flex-end;
     width: fit-content;
@@ -121,7 +128,7 @@ FEATURED
   .open-nav h2 {
     padding: 15px;
     color: var(--df-main);
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   .featured-container { /* flex container */
