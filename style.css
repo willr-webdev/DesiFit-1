@@ -128,9 +128,9 @@ FEATURED
   }
 
   .open-nav h2 {
-    padding: 15px;
+    padding: 5px;
     color: var(--df-main);
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .featured-container { /* flex container */
@@ -266,7 +266,7 @@ footer {
     font-size: .9em;
     font-style: italic;
     flex: 1 1 100%;
-    padding: 5px;
+    padding: 3px 10px;
   }
 
   .cta-footer {
