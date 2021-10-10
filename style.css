@@ -44,7 +44,7 @@ PAGE FLEX WRAPPER
 }
 
 /*
-NAV
+HEADER
 */
 .header-container {
   flex: 1 1 100%;
@@ -54,8 +54,20 @@ NAV
   margin-top: 10px;
   margin-bottom: 15px;
 }
-  .logo-header {
+  .header-logo-weight {
+    align-self: center;
     height: 2em;
+  }
+
+  .header-logo-text-container {
+    flex:1;
+  }
+
+  .header-logo-text {
+    font-size: 2em;
+    /* font-weight: bold; */
+    color: var(--df-main);
+    text-align: center;
   }
 
   .nav-container {
@@ -111,7 +123,7 @@ FEATURED
     font-size: 1.25em;
     color:whitesmoke;
     background-color: var(--df-main);
-    padding: 5px 10px 5px 0px;
+    padding: 5px 13px 5px 0px;
   }
 
   .open-nav {
@@ -123,12 +135,12 @@ FEATURED
     height: fit-content;
     background-color: whitesmoke;
     border-radius: 3px;
-    margin-top: -45px;
+    margin-top: -49px;
     margin-bottom: 25px;
   }
 
   .open-nav h2 {
-    padding: 5px 15px 5px 10px;
+    padding: 5px 10px 5px 10px;
     color: var(--df-main);
     font-size: 1.5em;
   }
