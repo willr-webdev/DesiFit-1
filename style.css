@@ -88,12 +88,26 @@ i.fa-bars:hover {
   color: whitesmoke;
 }
 
+i.fa-times {
+  display: none;
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
+  color: var(--df-main);
+}
+
+i.fa-times:hover {
+  color: red;
+}
+
 .nav_menu {
-  display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
   margin: 1rem;
+}
+
+.nav_menu li {
+  display: none;
 }
 
 .nav_menu li a {
@@ -105,14 +119,18 @@ i.fa-bars:hover {
   display: none;
 }
 
+#nav_checkbox:checked ~ .nav_menu li {
+  display: block;
+}
 #nav_checkbox:checked ~ .nav_toggle .fa-bars {
   display: none;
 }
-
 #nav_checkbox:checked ~ .nav_toggle .fa-times {
   display: block;
 }
-
+#nav_checkbox:checked ~ ul.nav_menu {
+  display: flex;
+}
 
 
 /*
@@ -123,16 +141,9 @@ FEATURED
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
-  i.fa-times {
-    display: none;
-    justify-content: flex-end;
-    font-size: 1.75em;
-    /* color:whitesmoke; */
-    color: var(--df-main);
-    padding: 5px 13px 5px 0px;
-  }
+  
 
   .open-nav {
     display: none;
