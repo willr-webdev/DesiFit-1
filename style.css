@@ -96,6 +96,11 @@ i.fa-bars:hover {
   margin: 1rem;
 }
 
+.nav_menu li a {
+  color: var(--df-main);
+  font-weight: bold;
+}
+
 #nav_checkbox {
   display: none;
 }
