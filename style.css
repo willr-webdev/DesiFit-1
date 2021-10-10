@@ -95,10 +95,6 @@ i.fa-times {
   color: var(--df-main);
 }
 
-i.fa-times:hover {
-  color: red;
-}
-
 .nav_menu {
   flex-direction: column;
   gap: 1.5rem;
