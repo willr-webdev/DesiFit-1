@@ -84,10 +84,6 @@ i.fa-bars {
   color: var(--df-main);
 }
 
-i.fa-bars:hover {
-  color: whitesmoke;
-}
-
 i.fa-times {
   display: none;
   margin-top: 0.2rem;
