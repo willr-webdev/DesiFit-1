@@ -9,7 +9,11 @@
 // }
 
 function dimMain() {
-  if (checkBox.checked == true) {
-    document.querySelector(".main-wrapper").style.opacity = "0.25";
-  } else { return }
+  var checkbox = document.getElementById('nav_checkbox');
+
+  if (checkbox.checked) {
+    document.querySelector(".main-wrapper").style.opacity = ".25";
+  } else {
+    document.querySelector(".main-wrapper").style.opacity = "1";
+  }
 }
