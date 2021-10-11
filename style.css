@@ -1,4 +1,4 @@
-/* ********** Mobile First ********** */
+/* Mobile First */
 
 :root {
   /* color variables */
@@ -271,6 +271,9 @@ FEATURED
         border:0;
       }
 
+      a.event {
+        display: flex;
+      }
 
 /*
 FOOTER
