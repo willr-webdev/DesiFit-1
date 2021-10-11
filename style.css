@@ -105,12 +105,20 @@ i.fa-times {
   background-color: rgba(255,255,255,.75);
 }
 
+.nav_menu-list {
+  background-color: var(--df-main);
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .nav_menu li {
   display: none;
+  padding: 1rem 0;
 }
 
 .nav_menu li a {
-  color: var(--df-main);
+  color: whitesmoke;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -132,6 +140,10 @@ i.fa-times {
   display: flex;
 }
 
+#nav_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
 /*
 FEATURED
 */
@@ -140,7 +152,7 @@ FEATURED
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* margin-top: 10px; */
+  opacity: 1;
 }
   
 
