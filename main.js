@@ -8,7 +8,7 @@
 //   document.querySelector(".fa-bars").style.display = "flex";
 // }
 
-function opacity() {
+function dimMain() {
   if (checkBox.checked == true) {
     document.querySelector(".main-wrapper").style.opacity = "0.25";
   } else { return }
