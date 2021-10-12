@@ -86,6 +86,10 @@ NAV
   left: calc(50% - 64px);
 }
 
+.main-color {
+  color: var(--df-main);
+}
+
 i.fa-bars {
   margin-top: 0.3rem;
   font-size: 1.3rem;
@@ -117,13 +121,13 @@ i.fa-times {
   display: none;
 }
 
-.li-1, .li-2, .li-3, .li-4 {
+.li-0, .li-1, .li-2, .li-3, .li-4 {
   border-bottom: 1px solid rgba(255,255,255,.25);
 }
 
-.li-1, .li-2, .li-3, .li-4, .li-5 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.li-0, .li-1, .li-2, .li-3, .li-4, .li-5 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -237,7 +241,7 @@ FEATURED
       }
 
       h3.clients {
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: bold;
         padding-top: 25px;
         margin-bottom: 15px;
