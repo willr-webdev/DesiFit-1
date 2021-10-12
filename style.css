@@ -74,6 +74,7 @@ NAV
   margin-right: auto;
   margin-top: 1rem;
   margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .nav_logo-text {
@@ -107,25 +108,24 @@ i.fa-times {
 .nav_menu-list {
   width: 100%;
   text-align: center;
-  padding-top: .75rem;
+  background-color: var(--df-main);
+  /* text-align: center; */
 }
 
 .nav_menu li {
-  background-color: var(--df-main);
-  width: 100%;
+  width: 50%;
   display: none;
-  /* padding: .6rem 0; */
 }
 
 .li-1, .li-2, .li-3, .li-4 {
-  border-bottom: 1px solid transparent;
-  border-image: linear-gradient(to right, var(--df-main) 20%, whitesmoke 70%, var(--df-main) 10%);
-  border-image-slice: 1;
+  border-bottom: 1px solid rgba(255,255,255,.25);
 }
 
 .li-1, .li-2, .li-3, .li-4, .li-5 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav_menu li a {
