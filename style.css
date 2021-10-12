@@ -117,6 +117,12 @@ i.fa-times {
   padding: .6rem 0;
 }
 
+.li-1, .li-2, .li-3, .li-4 {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, var(--df-main) 20%, whitesmoke 70%, var(--df-main) 10%);
+  border-image-slice: 1;
+}
+
 .nav_menu li a {
   color: whitesmoke;
   font-size: 1.5rem;
