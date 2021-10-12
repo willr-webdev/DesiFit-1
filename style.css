@@ -111,14 +111,14 @@ i.fa-times {
   /* background-color: var(--df-main); */
   width: 100%;
   text-align: center;
-  padding: 1rem 0;
+  padding: .6rem 0;
 }
 
 .nav_menu li {
   background-color: var(--df-main);
   width: 100%;
   display: none;
-  padding: 1rem 0;
+  padding: .6rem 0;
 }
 
 .nav_menu li a {
@@ -158,26 +158,6 @@ FEATURED
   width: 100%;
   opacity: 1;
 }
-  
-
-  .open-nav {
-    display: none;
-    flex: 1 1 50%;
-    flex-flow: column wrap;
-    align-self: flex-end;
-    width: fit-content;
-    height: fit-content;
-    background-color: whitesmoke;
-    border-radius: 3px;
-    margin-top: -49px;
-    margin-bottom: 25px;
-  }
-
-  .open-nav h2 {
-    padding: 5px 10px 5px 10px;
-    color: var(--df-main);
-    font-size: 1.5em;
-  }
 
   .featured-container { /* flex container */
     display: flex;
@@ -204,7 +184,6 @@ FEATURED
       /* font-style: italic; */
       color:rebeccapurple;
     }
-
 
     .blog {
       background-color: rgba(255, 255, 255, .5);
@@ -299,8 +278,6 @@ FEATURED
         flex: 1 1 100%;
         border:0;
       }
-
-      
 
 /*
 FOOTER
