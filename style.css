@@ -59,7 +59,7 @@ PAGE FLEX WRAPPER
 NAV
 */
 .nav {
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid lightgray;
 }
 
 .nav_toggle {
@@ -72,6 +72,7 @@ NAV
 .nav_logo-weight {
   width: 4rem;
   margin-right: auto;
+  margin-top: 1rem;
 }
 
 .nav_logo-text {
@@ -84,14 +85,14 @@ NAV
 }
 
 i.fa-bars {
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   font-size: 1.3rem;
   color: var(--df-main);
 }
 
 i.fa-times {
   display: none;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   font-size: 1.3rem;
   color: var(--df-main);
 }
@@ -101,18 +102,20 @@ i.fa-times {
   gap: 1.5rem;
   align-items: center;
   /* margin: 1rem; */
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: rgba(255,255,255,.75);
 }
 
 .nav_menu-list {
-  background-color: var(--df-main);
+  /* background-color: var(--df-main); */
   width: 100%;
   text-align: center;
   padding: 1rem 0;
 }
 
 .nav_menu li {
+  background-color: var(--df-main);
+  width: 100%;
   display: none;
   padding: 1rem 0;
 }

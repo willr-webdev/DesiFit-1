@@ -12,7 +12,7 @@ function dimMain() {
   var checkbox = document.getElementById('nav_checkbox');
 
   if (checkbox.checked) {
-    document.querySelector(".main-wrapper").style.opacity = ".25";
+    document.querySelector(".main-wrapper").style.opacity = "0";
   } else {
     document.querySelector(".main-wrapper").style.opacity = "1";
   }
