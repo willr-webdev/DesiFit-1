@@ -81,7 +81,7 @@ NAV
   color: var(--df-main);
   position: absolute;
   height: auto;
-  top: 0px;
+  top: 3px;
   left: calc(50% - 64px);
 }
 
